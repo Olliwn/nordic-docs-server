@@ -1,0 +1,27 @@
+{
+  "name": "nordic-docs-server",
+  "version": "1.0.0",
+  "description": "MCP server for Nordic Semiconductor documentation search using Perplexity API",
+  "type": "module",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "start": "node build/index.js",
+    "dev": "ts-node --esm src/index.ts",
+    "watch": "tsc -w"
+  },
+  "keywords": ["mcp", "nordic", "documentation", "perplexity"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.1.0",
+    "@types/node": "^20.0.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.0.0",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.0",
+    "@types/axios": "^0.14.0"
+  }
+}
