@@ -13,9 +13,9 @@ import { enhanceQuery, QueryContext } from './utils/query-enhancer.js';
 import { formatResponse } from './utils/response-formatter.js';
 
 // Load environment variables
-config(); // Temporarily commented out
+config();
 
-// const PERPLEXITY_API_KEY = ''; // Hardcoded for temporary testing
+const PERPLEXITY_API_KEY = process.env.PERPLEXITY_API_KEY;
 if (!PERPLEXITY_API_KEY) {
   throw new Error('PERPLEXITY_API_KEY environment variable is required');
 }
